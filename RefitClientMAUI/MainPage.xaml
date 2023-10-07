@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="RefitClientMAUI.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Refit Client .NET MAUI">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="16"
+                Text="How to use Refit Client to Connect .Net MAUI App to an Api hosted on localhosusing https protocol" />
+            <BoxView HeightRequest="1" Color="Black" />
+
+            <Label x:Name="weatherLbl" Text="Weather Forecasts Result from Api will be displayed here" />
+            <Button
+                x:Name="weatherBtn"
+                Clicked="weatherBtn_Clicked"
+                Text="Fetch Weather Forecasts" />
+
+            <BoxView HeightRequest="1" Color="Black" />
+
+            <Label x:Name="tokenLbl" Text="JWt Token will be displayed here" />
+            <Button
+                x:Name="loginBtn"
+                Clicked="loginBtn_Clicked"
+                Text="Login - (Get JWT Token)" />
+
+            <BoxView HeightRequest="1" Color="Black" />
+
+            <Label x:Name="profileLbl" Text="My Profile info will be displayed here" />
+            <Button
+                x:Name="profileBtn"
+                Clicked="profileBtn_Clicked"
+                Text="Fetch My Profile (Requires Token)" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
